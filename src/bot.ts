@@ -6,6 +6,7 @@ import { TYPES } from "./types";
 export class Bot {
     private client: Client;
     private readonly token: string;
+    private readonly prefix: string = '!';
 
     constructor(
         @inject(TYPES.Client) client: Client,
