@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "watch": "tsc -p tsconfig.json -w",
-    "debug": "node --inspect -r ts-node/register src/index.ts",
+    "debug": "nodemon --exec \"node --inspect -r ts-node/register src/index.ts\"",
     "test": "mocha -r ts-node/register \"tests/**/*.spec.ts\""
   },
   "keywords": [],
@@ -20,7 +20,6 @@
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.5",
-    "@types/reflect-metadata": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "chai": "^5.0.0",
